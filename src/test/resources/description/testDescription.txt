@@ -1,0 +1,5 @@
+---En el primer escenario comprobe que cuando ingresamos la hora del dia 3, este si nos devuelva Night.
+---En el segundo escenario se comprueba que cuando se ingresa la hora 8, este si nos devuelva Morning.
+---En el tercer escenario se comprueba que cuando se ingresa la hora 14,este si nos devuelva Afternoon.
+---En el cuarto escenario se comprueba que cuando se ingresa la hora 21, este si nos devuelva Evening.
+---En el quinto escenario se comprueba que cuando se ingrese una hora mayor a 24, nos devuelva Invalid hour.
