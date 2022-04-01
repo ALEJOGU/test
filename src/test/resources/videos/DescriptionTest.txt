@@ -1,0 +1,30 @@
+En la clase Herokuapp_Test_CheckBoxes, se realizan 2 Test de la página "https://the-internet.herokuapp.com/checkboxes".
+
+-Se selecciona el primer CheckBox utilizando un CssSelector con la dirección "form#checkboxes input:nth-child(1)", este me selecciona el form con el id "checkboxes" 
+y luego selecciona los input, al fina utilizamos el nth-child(1) para selectcionar el primer hijo dentro de forn, pero que sea input.
+-Le damos click para que se marque el CheckBox.
+-Se selecciona el segundo CheckBox de la misma forma que el anterior, con la diferencia que al momento de buscar con nth-child(), ingresamos un 3 dentro de los parentesis, 
+esto para seleccionar el CheckBox, como el segundo CheckBox es el 3er hijo, se debe de ingresar el 3 para seleccionarlo.
+--Le damos click para que se desmarque el CheckBox (Esto debido a que al ingresar a la pagina ya esta seleccionado por defecto).
+-Comprobamos que el boolean almacenado en la variable isChecked sea True, esto lo hacemos con el metodo isSelected, que nos devullve un True si esta seleccionado el CheckBox.
+-Comprobamos que le boolean sea False,esto se hace con el isSelect, en este caso como esta desmarcado, nos devolvera un False, lo cual es requerido para pasar el Test.
+-Al final antes de cerrar el navegador ingrese un Threar.sleep() para para los pasos y esperar 2 segundos antes de su cierre.
+
+
+
+En la clase Herokuapp_Test_DownloadFile, se realizaran 3 Test de la página "https://the-internet.herokuapp.com/download".
+
+-Para este test utilizamod el metodo de Java.io.File para realizar la comprobación de descarga de los archivos.
+-Definimos 3 Objetos, Text123, testPhoto y a. (este ultimo esta con la intención de agregar una prueba para comprobar un estado booleano False)
+-Estos objetos tiene como argumento la ruta en la que se encontraran una vez se decarguen de la página anteriormente mencionada.
+-Seleccionamos el primer archivo mediante un CssSelector con la ruta "div.example a:nth-child(4)".
+-Le damos click para realizar la descarga del archivo "Text123.txt".
+-Seleccionamos el segundo archivo a descargar, los hacemos con un CssSelector con la ruta "div.example a:nth-child(42)".
+-Le damos click para realizar la descarga del archivo "testPhoto.jpg".
+-Se coloca el método para parar la ejecución por 2 segundos. (esto debido a que presentaria problemas al momento de intentar borrar el archivo)
+-Comprobamos que el archivo "Text123" SI exista en la ruta anteriormente definida, que en este caso es en Descargas.
+-Comprobamos que el archivo "testPhoto" Si exista en la ruta anterioromente definida, en este caso tambien se encuentra en Descargas.
+-Comprobamos que el archivo "1,9Мб JPG" No exista en la ruta especificada con anterioridad.
+-Finalmente y después de un tiempo de espera de 2 segundos cerramos el navegador sin antes borrar los archivos descargados, los cuales son "Text123" y "testPhoto".
+
+
